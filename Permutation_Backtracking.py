@@ -9,4 +9,9 @@ class Solution:
             num = nums.pop(0)
             permutate = permutation(nums)
         
-        
+            for perm in permutate:
+                perm.append(n)
+            return solution.extend(permutate)
+            nums.append(n)
+
+        return result
