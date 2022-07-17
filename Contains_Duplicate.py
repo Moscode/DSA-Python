@@ -7,7 +7,18 @@ class Solution:
             else:
                 checker.add(element)
         return False
-        
+
+    
+        """
+        For time complexity of O(n^2) & space complexity of O(1) | 
+        if sort first then use two pinter i.e single-for loop 
+        for 2 adjacent neighbor then we have O(nlogn) and O(1) space
+        for each_num in nums:
+            for each_num_inner in nums:
+                if each_num == each_num_inner:
+                    return True
+        return False
+        """    
         
         
         
