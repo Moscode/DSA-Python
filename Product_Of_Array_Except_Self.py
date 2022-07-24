@@ -1,7 +1,7 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        """
-        time complexity: O(n), space complexity: O(1) since the question ignore the output/res space
+        #time complexity: O(n), space complexity: O(1) since the question ignore the output/res space
+        
         pref = 1
         postfix = 1
         res = [1 for i in range(len(nums))]
@@ -15,7 +15,6 @@ class Solution:
             postfix *= nums[i]
             
         return res
-        """
         
         
         """
