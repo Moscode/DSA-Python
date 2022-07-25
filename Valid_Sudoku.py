@@ -11,6 +11,7 @@ class Solution:
         store_for_col = collections.defaultdict(set)
         sqrt = collections.defaultdict(set)
         
+        #time complexity: O(n^2), space complexity: O(n^2)
         for row in range(len(board)):
             for col in range(len(board[row])):
                 if board[row][col] is not ".":
