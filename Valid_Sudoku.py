@@ -6,6 +6,7 @@ class Solution:
         (2) Evaluate the appropriate data structure to use, 
             immediately after having an algo or approach before jumping into coding
         (3) Using defaultdict method from collections to avoid key error
+        (4) Learnt about considering constrain when evaluating BIG O of an algorithms
         """
         store_for_row = collections.defaultdict(set)
         store_for_col = collections.defaultdict(set)
