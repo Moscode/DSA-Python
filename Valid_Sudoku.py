@@ -6,13 +6,17 @@ class Solution:
         (2) Evaluate the appropriate data structure to use, 
             immediately after having an algo or approach before jumping into coding
         (3) Using defaultdict method from collections to avoid key error
-        (4) Learnt about considering constrain when evaluating BIG O of an algorithms
+        (4) Learnt about considering constrains when evaluating BIG O of an algorithms
         """
         store_for_row = collections.defaultdict(set)
         store_for_col = collections.defaultdict(set)
         sqrt = collections.defaultdict(set)
         
-        #time complexity: O(n^2), space complexity: O(n^2)
+        #time complexity: O(1), space complexity: O(1)
+        """
+        Resources for why the Big O is constant even with two for loop and three dict:
+        https://www.tutorialcup.com/interview/matrix/valid-sudoku.htm#Time_Complexity
+        """
         for row in range(len(board)):
             for col in range(len(board[row])):
                 if board[row][col] is not ".":
