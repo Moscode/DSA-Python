@@ -1,7 +1,8 @@
 class Solution:
     """
-    Lesson Learnt: I need to know more about built-in function
+    What I Learnt: I need to know more about built-in function
     and expected values regarding the lang I'm using
+    e.g isalnum() and expected output for 2.lower() is just 2
     """
     def isPalindrome(self, s: str) -> bool:
         front_pointer = 0
