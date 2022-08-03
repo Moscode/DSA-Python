@@ -4,6 +4,9 @@ class Solution:
     and expected values regarding the lang I'm using
     e.g isalnum() and expected output for 2.lower() is just 2
     """
+    """
+    Time Complexity: O(n), Space Complexity: O(1)
+    """
     def isPalindrome(self, s: str) -> bool:
         front_pointer = 0
         end_pointer = len(s) - 1
