@@ -1,6 +1,29 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
         """
+        Time-Complexity: O(n) & Space-Complexity: O(1)
+        """
+        max_left = 0
+        max_right = 0
+        solution = 0
+        f_pointer = 0
+        e_pointer = len(height) - 1
+        result = 0
+        
+        while f_pointer < e_pointer:
+            max_left = max(height[f_pointer], max_left)
+            max_right = max(height[e_pointer], max_right)
+            if max_right < max_left:
+                solution = min(max_left, max_right) - height[e_pointer]
+                e_pointer -= 1
+            else:
+                solution = min(max_left, max_right) - height[f_pointer]
+                f_pointer += 1
+            result += max(solution, 0)
+        return result
+
+
+        """
         What I Learnt: (1) Be sure to totally understand the question.
                        (2) Always be sure that your pseudocode or solution works before
                             by using sample and workthrough, PLEASE!!!
