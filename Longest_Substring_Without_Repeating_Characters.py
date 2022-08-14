@@ -4,6 +4,7 @@ class Solution:
         What I learnt:
         1. Failed this task alot of times because of different edge cases that I could not come up             with
         2. Understood difference between .discard and .remove method on set
+        3. Understood difference between substring and subsequence
         """
         if len(s) == 0:
             return 0
